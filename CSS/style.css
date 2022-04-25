@@ -1,0 +1,37 @@
+.container{
+    width: 80%;
+    position: relative;
+   
+}
+.median{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    padding: 0;
+    margin: 0;
+}
+.littles{
+    /*position: absolute;
+    width: 50%;
+    /*display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 50vh;
+    //margin: 0%;*/
+}
+.bigs{
+    width: 100%  ;
+    position: absolute;
+    left: 27%;
+    top:5.2vh;
+    height: 93vh;
+    margin: 0%;
+}
+.bigs img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.littles img{
+    width:100%
+}
