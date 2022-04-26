@@ -1,18 +1,26 @@
 .container{
-    width: 80%;
+    background-image: url('../Galeries/titre.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80vw;
     position: relative;
    
 }
 .median{
     display: flex;
     flex-wrap: wrap;
-    width: 30%;
+    width: 30vw;
     padding: 0;
     margin: 0;
 }
+.sub_median{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
 .littles{
-    /*position: absolute;
-    width: 50%;
+    /*position: absolute;*/
+    width: 15vw;
     /*display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -20,11 +28,11 @@
     //margin: 0%;*/
 }
 .bigs{
-    width: 100%  ;
+    width: 80vw;;
     position: absolute;
-    left: 27%;
-    top:5.2vh;
-    height: 93vh;
+    left: 38%;
+    top: 7.2vh;
+    height: 94%;
     margin: 0%;
 }
 .bigs img{
@@ -34,4 +42,105 @@
 }
 .littles img{
     width:100%
+}
+
+@media screen and (max-device-width:400px) {
+    .container h1{
+        font-size: 15px;
+        background-image: url('../Galeries/titre2.jfif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: rgb(193, 193, 67);
+    }
+    .median{
+        display: block ;
+    }
+    .sub_median{
+        width: 80vw;
+        display: flex;
+        height: 30vh;
+        flex-wrap: nowrap;
+    }
+    .littles img{
+    
+        height: 10vh;
+        
+    }
+    .bigs{
+        width: 80vw;
+    /* position: absolute; */
+    left: 0%;
+    top: 21.2vh;
+    height: 50vh;
+    margin: 0%;
+        
+    }   
+    
+}
+
+@media screen and (min-device-width:400px) and (max-device-width:727px) {
+    .container h1{
+        font-size: 15px;
+        background-image: url('../Galeries/titre2.jfif');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: rgb(193, 193, 67);
+    }
+    .median{
+        display: block ;
+    }
+    .sub_median{
+        width: 80vw;
+        display: flex;
+        height: 40vh;
+        flex-wrap: nowrap;
+    }
+    .littles img{
+    
+        height: 15vh;
+        
+    }
+    .bigs{
+        width: 80vw;
+    /* position: absolute; */
+    left: 0%;
+    top: 21.2vh;
+    height: 60vh;
+    margin: 0%;
+        
+    }   
+    
+}
+
+@media screen and (min-device-width:727px) and (max-device-width:1120px) {
+    body{
+        background-image: url('../Galeries/titre2.jfif');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container{
+        width: 100%;
+        color: rgb(193, 193, 67);
+    }
+    .bigs{
+        /*height: 93vh;*/
+        left: 32%;
+        top: 9%;
+        
+    }
+    .median{
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        padding: 0;
+        margin: 0;
+    }
+    .sub_median{
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        /*height: 93vh;*/
+
+    }
+    
 }

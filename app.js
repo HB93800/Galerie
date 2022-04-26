@@ -1,7 +1,9 @@
 //console.log('salut');
-$('.littles').mouseover(function(){
-    var src=this.getAttribute("src");
-    console.log(src);
-    $(".bigs").html('<img src="${src}" alt="Hokuto.jpg">')   
+$('.littles img').mouseover(function(){
+    var src1=this.getAttribute("src");
+    //var alt2=this.getAttribute("alt");
+    console.log(src1);
+    //$('.bigs img').removeClass('.big_pic');
+    $(".bigs").html('<img src='+src1+">");   
 
-})
+});
